@@ -1,0 +1,32 @@
+{
+  "name": "uptogithubuploader",
+  "version": "1.0.0",
+  "description": "CLI tool to upload local folders to GitHub",
+  "main": "index.js",
+  "bin": {
+    "uploadtogithub": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "dev": "node bin/cli.js",
+    "build-client": "cd client && npm run build",
+    "preview": "cd client && npm run preview"
+  },
+  "keywords": [
+    "github",
+    "git",
+    "uploader",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^22.0.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "enquirer": "^2.4.1",
+    "express": "^4.21.0",
+    "keytar": "^7.9.0",
+    "simple-git": "^3.31.1"
+  }
+}
