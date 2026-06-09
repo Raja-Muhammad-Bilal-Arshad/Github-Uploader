@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="boltGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00d4aa"/>
+    </linearGradient>
+    <linearGradient id="gGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00d4aa"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="64" height="64" rx="12" fill="#0d1117"/>
+  
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="#161b22" stroke="#21262d" stroke-width="1"/>
+  
+  <path d="M38 8L18 32h12l-4 24 22-28H30l6-20z" fill="url(#boltGradient)" filter="url(#glow)" opacity="0.9"/>
+  
+  <circle cx="42" cy="42" r="16" fill="none" stroke="url(#gGradient)" stroke-width="2.5" opacity="0.8"/>
+  
+  <path d="M36 42c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6" fill="none" stroke="url(#gGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  
+  <path d="M38 48v-4" stroke="url(#gGradient)" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+</svg>
